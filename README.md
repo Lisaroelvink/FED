@@ -37,7 +37,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je opdracht:
   [Albert Hein allerhande - home](https://www.ah.nl/allerhande)
-  Albert Hein allerhande - recept](https://www.ah.nl/allerhande/recept/R-R1189960/paddenstoelenrisotto-met-pancetta-uit-de-oven)
+
+
+  [Albert Hein allerhande - recept](https://www.ah.nl/allerhande/recept/R-R1189960/paddenstoelenrisotto-met-pancetta-uit-de-oven)
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home 
