@@ -43,11 +43,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/screenshot-home.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Detail pagina (recept)  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/screenshot-recept.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -62,25 +62,49 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen:
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  
+  ##### Headers
+  
+  Headings worden voorgelezen. Dit zijn alleen thema's als “Kom er maar in herfst”. Er wordt niet vermeld dat dit allemaal recepten zijn. Nu gaat de hele website over recepten dus dit is waarschijnlijk van zelfspreken. List wordt niet benoemd waardoor je mist welke recepten er onder “Kom er maar in herfst” vallen. Je weet hierdoor niet dat hoeveel recepten onder vermeld staan.
+  
+  ###### Oplossing
+  
+  Recepten staan in losse articles. Deze kunnen in een list worden gezet zodat de screenreader voorleest hoeveel list items er naar voren komen.
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  
+  ##### Darkmode
+  Deze is niet van toepassing op de website. Bespreekbaar of dit nodig is. 
+  
+  ##### Kleuren
+  Website bevat veel en goed contrast. Afbeeldingen worden wat minder smakelijk zodra de website bekekend wordt door Colorblindly. Teksten zijn goed te lezen.
+  
+ <img src="readme-images/kleurenblind-body.png" width="375px" alt="omschrijving van de pagina">
+ 
+ ##### Hover
+Buttons: zwakke hover
+Links in paragraaf: 0 hover
+Articles krijgen alleen dropshadow.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
+  ###### Oplossing 
+  
+  Toegankelijkheid kan worden verbeterd door wat meer animatie / kleur verandering / underlining bij de hover. Kleurcontrast is verder goed. Voor de darkmode betwijfel ik of dit wat gaat toevoegen aan de gebruikers ervaring op de website. 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
+  
+  De website is redelijk vergevingsgezind als het gaat over een verkeerde klik. Wanneer een gebruiker bij een verkeerd recept zit en terug wilt komt de gebruiker terug op het exacte punt in de scroll waar de gebruiker heeft geklikt. Dit wil ik meenemen in mijn ontwerp.
+  
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  
+  Glaucome: cursor & hover niet te zien.
+  Hemianopia: -
+  Blur: cursor en hover states wel te zien, maar niet duidelijk. Tekst niet te lezen.
+  Combined loss: -
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
