@@ -13,16 +13,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Jij
 
 <details open>
-  <summary>uitwerken voor kick-off werkgroep</summary>
+  <summary>uitwerking voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Lisa Roelvink 
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  Blauw
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Surface plane
  
 </details>
 
@@ -33,18 +33,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Je website
 
 <details open>
-  <summary>uitwerken voor kick-off werkgroep</summary>
+  <summary>uitwerking voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  [Homepagina Allerhande](https://www.ah.nl/allerhande)
+
+  [Detailpagina](https://www.ah.nl/allerhande/recept/R-R1189960/paddenstoelenrisotto-met-pancetta-uit-de-oven)
+
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/screenshot-home-png" width="375px" alt="Overzicht waar gebruikers recepten kunnen vinden en zoeken">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/screenshot-recept.png" width="375px" alt="Pagina waar een recept staat met benodigheden, stappenplan en soms een filmpje.">
  
 </details>
 
@@ -59,27 +62,64 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen:
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  
+  ##### Headings
+  Heading level screenreader. Kom er maar in herfst section bevat geen list, waardoor er niet benoemd wordt hoeveel recepten er onder “Kom er maar in herfst” vallen. Er wordt ook niet benoemd dat het recepten zijn, maar misschien spreekt dat voor zich.
+
+  Dubbele header verwarrend. 
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
+  Recepten/articles in een list zetten?
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+
+  ##### Scrollen
+  Gebruiker navigeert terug naar Google in de carousel. 
+
+  ##### Hover
+  Buttons: zwakke hover
+  Links in paragraaf: 0 hover
+  Articles krijgen alleen dropshadow. Misschien kleine animatie.
+
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
+  Sanne heeft uitgelegd in Werkgroep 2 dat je dat kunt voorkomen.
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  De website is redelijk vergevingsgezind als het neer komt op een verkeerde klik. De gebruiker navigeerd precies terug naar het punt waar de klik is gedaan op de home pagina.
 
+  Dit wil ik graag meenemen in mijn website.
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+
+  ##### Darkmode
+  Niet van toepassing. Twijfel of dit echt nodig is en wat bijdraagt. 
+
+  ##### Kleuren
+  Website bevat veel en goed contrast. Afbeeldingen worden wat minder smakelijk. Teksten zijn goed te lezen.
+
+  <img src="readme-images/kleurenblind-header.png" width="375px" alt="Kleurenblind header">
+
+  <img src="readme-images/kleurenblind-body.png" width="375px" alt="Kleurenblind body">
+
+  <img src="readme-images/zwart-wit.png" width="375px" alt="Contrast">
+
+  ##### Zicht
+  Glaucome: cursor & hover niet te zien.
+  Hemianopia: -
+  Blur: cursor en hover states wel te zien, maar niet duidelijk. Tekst niet te lezen.
+  Combined loss: -
+
+  Teksten zijn met de beperkingen in zicht niet te lezen.
+
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
+  Wellicht grotere animaties, hovers en duidelijke kleurverandering wanneer iets wordt geselecteerd. 
 
 </details>
 
