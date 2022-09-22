@@ -42,11 +42,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/screenshot-home-png" width="375px" alt="Overzicht waar gebruikers recepten kunnen vinden en zoeken">
+  Homepagina Allerhande  
+  <img src="readme-images/screenshot-home.png" width="375px" alt="Overzicht waar gebruikers recepten kunnen vinden en zoeken">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Detailpagina recept 
   <img src="readme-images/screenshot-recept.png" width="375px" alt="Pagina waar een recept staat met benodigheden, stappenplan en soms een filmpje.">
  
 </details>
