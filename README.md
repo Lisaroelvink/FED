@@ -42,12 +42,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Homepagina Allerhande
-  <img src="readme-images/screenshot-home.png" width="375px" alt="Overzicht waar gebruikers recepten kunnen vinden en zoeken">
+  hier de naam van de pagina  
+  <img src="readme-images/screenshot-home-png" width="375px" alt="Overzicht waar gebruikers recepten kunnen vinden en zoeken">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Detailpagina recept
-  
+  hier de naam van de pagina  
   <img src="readme-images/screenshot-recept.png" width="375px" alt="Pagina waar een recept staat met benodigheden, stappenplan en soms een filmpje.">
  
 </details>
@@ -158,20 +157,29 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Lisa           | Oemar              | Ouiaam       | student 4        |
+  | Lisa R      | Oemar          | Ouiman    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | Breakdown      | Breakdown          | en ik dit    | en dan ik dat    |
-  | Html           | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | -              | ...                | ...          | ...              |
+  | Breakdown schetsen  | Breakdownschetsen    | Ook breakdown    | en dan ik dat    |
+  | 'Blokjes content' | Ul/li nakijken | nog een punt | dit wil ik zeker |
+  | Hoeveelheid content bespreken            | Header nagekeken         | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - samen door de KPN website gegaan en elementen besproken
+  - Hoeveelheid content besproken
+  - Menu aangepast/bewerking naar groot scherm
+
+  Notities Lisa:
+
+  Even vragen hoe ik dit in Github krijg zonder dat de code gelezen wordt.
+
+  <img src="readme-images/IMG_3669.jpg" width="375px" alt="breakdown header en navigatie">
+
+  <img src="IMG_3670.jpg" width="375px" alt="breakdown section recepten">
+
+  <img src="readme-images/IMG_3671.jpg" width="375px" alt="breakdown laatste section">
 
 </details>
 
