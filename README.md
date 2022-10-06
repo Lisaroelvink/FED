@@ -172,6 +172,74 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Menu aangepast/bewerking naar groot scherm
 
   Notities Lisa:
+  
+```
+<header>
+    <nav>
+        <ul>
+            <li><a href=""></a></li>
+        </ul>
+        <button></button>
+        <button></button>
+    </nav>
+</header>
+
+<main>
+	<section> 2x 	In een section MOET een H zitten.
+
+Button: veroorzaakt een actie op de pagina.
+Link: navigatie naar een andere pagina of een plek op de pagina.
+
+H1 ‘ontbreekt’
+Of op de homepage H1 aanmaken en verstoppen.
+Of logo als H1 aanmaken.
+
+3 blokken op KPN = section met daarin ul en per blok is een li.
+
+<section>
+    <ul>
+        <li>
+            <h3></h3>
+            <ul>
+                <li></li>
+            </ul>
+            <a href=""></a>
+        </li>
+        <li>
+            <h3></h3>
+            <ul>
+                <li></li>
+            </ul>
+            <a href=""></a>
+        </li>
+        <li>
+            <h3></h3>
+            <ul>
+                <li></li>
+            </ul>
+            <a href=""></a>
+        </li>
+    </ul>
+</section>
+
+
+Wanneer je een volgorde in een section met css wilt veranderen:
+
+In de parent
+Display: flex;
+flex-direction: column;
+
+In de child
+order: -100;
+
+De volgorde wordt van boven naar beneden bepaald vanaf -1, 0 en 1.
+
+Footer:
+
+Section Button
+H3
+ul
+```
 
   Even vragen hoe ik dit in Github krijg zonder dat de code gelezen wordt.
 
@@ -209,10 +277,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Aria labels links
+  - Section (articles) even in een UL zetten
+  - 2e navigatie buttons maken
+  - Plan van aanpak:
+  - Eerst typografie
+  - Daarna images positionering (kaarten en sliders)
+  - Van boven naar beneden werken
+  - Navigatie op het einde maken
+
 
 </details>
 
