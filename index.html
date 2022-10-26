@@ -18,11 +18,11 @@
             <!--HAMBURGER MENU-->
             <!--# zodat de links nergens naar navigeren-->
 
-            <button><img width="40px" height="40px" src="images/menu.svg" alt="Menu"></button>
-            <a href="/"><img width="40px" height="40px" src="images/Albert_Heijn_Logo.svg" alt="Albert_Heijn_Logo naar Home"></a>
-            <a href="#"><img width="20px" height="20px" src="images/icon-user.svg" alt="Inloggen"></a>
-            <a href="#"><img width="20px" height="20px" src="images/icon-heart.svg" alt="Favorieten"></a>
-            <a href="#"><img width="20px" height="20px" src="images/icon-shoppingcart.svg" alt="Winkelmandje"></a>
+            <button aria-label="Website menu"><img width="40px" height="40px" src="images/menu.svg" alt="Menu"></button>
+            <a href="/" aria-label="Naar Albert heijn home pagina"><img width="40px" height="40px" src="images/Albert_Heijn_Logo.svg" alt="Albert heijn logo"></a>
+            <a href="#" aria-label="Naar inloggen"><img width="20px" height="20px" src="images/icon-user.svg" alt="Inlog icoon"></a>
+            <a href="#" aria-label="Naar favorieten"><img width="20px" height="20px" src="images/icon-heart.svg" alt="Favorieten icoon"></a>
+            <a href="#" aria-label="Naar winkelmandje"><img width="20px" height="20px" src="images/icon-shoppingcart.svg" alt="Winkelmandje icoon"></a>
 
             <ul>
                 <li><a href="#">Inloggen</a></li>
@@ -39,20 +39,20 @@
 
         <form action="">
             <input type="text" placeholder="Waar ben je naar op zoek?">
-            <button type="submit"><img width="20px" height="20px"src="images/icon-search.svg" alt="zoek icon"></button>
+            <button type="submit" aria-label="Zoeken"><img width="20px" height="20px"src="images/icon-search.svg" alt="Zoek icoon"></button>
         </form>
-
-
     </header>
 
     <main>
-        <!-- 2E Navigatie allerhande-->
+        <!-- 2E Navigatie allerhande, BUTTONS MAKEN-->
 
         <header>
+
             <nav>
+                <a href="#" aria-label="Naar Allerhande home pagina"><img width="150px" src="images/allerhande_logo.svg" alt="Allerhande logo"></a>
+
+                <button aria-label="Overzicht menu">Overzicht</button>
                 <ul>
-                    <li><img width="150px" src="images/allerhande_logo.svg" alt="Allerhande logo"></li>
-                    <li><a href="#">Overzicht</a></li>
                     <li><a href="#">Recepten</a></li>
                     <li><a href="#">Thema's</a></li>
                     <li><a href="#">Kids</a></li>
@@ -67,11 +67,13 @@
 
         <section>
             <h1>Vind makkelijk het beste recept</h1>
-            <img src="images/flespompoen.jpeg" alt="Header afbeelding">
-            <form class="zoek_recept">
+            <img src="images/flespompoen.jpeg" alt="Afbeelding van flespompoen">
+
+            <form>
                 <input type="text" placeholder="Zoek een recept">
                 <button type="submit"> </button>
             </form>
+
             <ul>
                 <li><a href="#">BBQ</a></li>
                 <li><a href="#">Salades</a></li>
@@ -91,97 +93,117 @@
             <ul>
                 <li>
                     <a href="#">
-                        <img src="" alt="">
-                        <ul>
-                            <li>40 min</li>
-                            <li>550 kcal</li>
-                            <li>Veganistisch</li>
-                        </ul>
-                        <h4>Vegan pompoensoep met volkoren toast</h4>
+                        <article>
+                            <div>
+                                <img src="images/vegan-pompoensoep.jpeg" alt="vegan pompoensoep">
+                            </div>
+                            <ul>
+                                <li>40 min</li>
+                                <li>550 kcal</li>
+                                <li>Veganistisch</li>
+                            </ul>
+                            <h4>Vegan pompoensoep met volkoren toast</h4>
+                        </article>
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
-                        <img src="" alt="">
-                        <ul>
-                            <li>Receptvideo</li>
-                            <li>02:36</li>
-                        </ul>
-                        <h4>Rijst uit de oven met tomaat, artisjok en witte bonen</h4>
+                        <article>
+                            <div>
+                                <img src="images/rijstuitdeoven.jpeg" alt="rijst uit de oven met tomaat">
+                            </div>
+                            <ul>
+                                <li>Receptvideo</li>
+                                <li>02:36</li>
+                            </ul>
+                            <h4>Rijst uit de oven met tomaat, artisjok en witte bonen</h4>
+                        </article>
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
-                        <img src="" alt="">
-                        <ul>
-                            <li>20 min</li>
-                            <li>840 kcal</li>
-                            <li>3</li>
-                            <li>4</li>
-                        </ul>
-                        <h4>Knolselderij-lasagne met gehakt en mozzarella</h4>
+                        <article>
+                            <img src="images/knolselderij-lasagne.jpeg" alt="knolselderij lasagne">
+                            <ul>
+                                <li>20 min</li>
+                                <li>840 kcal</li>
+                                <li>3</li>
+                                <li>4</li>
+                            </ul>
+                            <h4>Knolselderij-lasagne met gehakt en mozzarella</h4>
+                        </article>
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
-                        <img src="" alt="">
-                        <ul>
-                            <li>Receptvideo</li>
-                            <li>01:24</li>
-                        </ul>
-                        <h4>Shakshuka met courgette en spinazie</h4>
+                        <article>
+                            <img src="images/shakshuka.jpeg" alt="shakshuka">
+                            <ul>
+                                <li>Receptvideo</li>
+                                <li>01:24</li>
+                            </ul>
+                            <h4>Shakshuka met courgette en spinazie</h4>
+                        </article>
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
-                        <img src="" alt="">
-                        <ul>
-                            <li>Receptvideo</li>
-                            <li>00:49</li>
+                        <article>
+                            <img src="images/preitaart.jpeg" alt="preitaart met oude kaas">
+                            <ul>
+                                <li>Receptvideo</li>
+                                <li>00:49</li>
 
-                        </ul>
-                        <h4>Preitaart met oude kaas en pistachedeeg</h4>
+                            </ul>
+                            <h4>Preitaart met oude kaas en pistachedeeg</h4>
+                        </article>
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
-                        <img src="" alt="">
-                        <ul>
-                            <li>45 min</li>
-                            <li>540 kcal</li>
-                            <li>Glutenvrij</li>
-                            <li>5</li>
-                        </ul>
-                        <h4>Rosti met spek en sperziebonensalade</h4>
+                        <article>
+                            <img src="images/rostimetspek.jpeg" alt="rosti met spek en sperziebonensalade">
+                            <ul>
+                                <li>45 min</li>
+                                <li>540 kcal</li>
+                                <li>Glutenvrij</li>
+                                <li>5</li>
+                            </ul>
+                            <h4>Rosti met spek en sperziebonensalade</h4>
+                        </article>
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
-                        <img src="" alt="">
-                        <ul>
-                            <li>Receptenvideo</li>
-                            <li>03:27</li>
-                        </ul>
-                        <h4>Paprikasoep met tomaal en knappirige tortillareepjes</h4>
+                        <article>
+                            <img src="images/paprikasoep.jpeg" alt="paprikasoep met tomaat en knappirige tortillareepjes">
+                            <ul>
+                                <li>Receptenvideo</li>
+                                <li>03:27</li>
+                            </ul>
+                            <h4>Paprikasoep met tomaat en knappirige tortillareepjes</h4>
+                        </article>
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
-                        <img src="" alt="">
-                        <ul>
-                            <li>30 min</li>
-                            <li>Vegetarisch</li>
-                            <li>4</li>
-                            <li>4</li>
-                        </ul>
-                        <h4>Vegetarische balletjes met aardappelpuree</h4>
+                        <article>
+                            <img src="images/vegetarisch-balletjes.jpeg" alt="vegetarische balletjes met aardappelpuree">
+                            <ul>
+                                <li>30 min</li>
+                                <li>Vegetarisch</li>
+                                <li>4</li>
+                                <li>4</li>
+                            </ul>
+                            <h4>Vegetarische balletjes met aardappelpuree</h4>
+                        </article>
                     </a>
                 </li>
             </ul>
@@ -190,85 +212,98 @@
 
         <!--SECTION 3: Losse artikelen-->
 
-        <section>
-            <h2>Losse artikelen</h2>
+        <ul>
+            <li>
+                <article>
+                    <img src="images/allerhande_kookboek.jpeg" alt="Kookboek">
 
-            <article>
-                <img src="images/allerhande_kookboek.jpeg" alt="Kookboek">
+                    <h3>Allerhande kookboek: NL op z'n lekkerst</h3>
 
-                <h3>Allerhande kookboek: NL op z'n lekkerst</h3>
+                    <p>
+                        In ons nieuwste Allerhande-kookboek staan maar liefst 130 heerlijke en toegankelijke recepten. Nu verkrijgbaar voor €14,99 in de winkel en online.
+                    </p>
 
-                <p>
-                    In ons nieuwste Allerhande-kookboek staan maar liefst 130 heerlijke en toegankelijke recepten. Nu verkrijgbaar voor €14,99 in de winkel en online.
+                    <a href="#">Inkijkexemplaar en bestellen</a>
 
-                    <ul>
-                        <a href="#">
-                            <li>Inkijkexemplaar en bestellen</li>
-                        </a>
-                    </ul>
+                    <p>
+                        Vers van de akkers, zo op ons bord. En dat elke dag opnieuw. In dit Allerhande kookboek laten we Nederland op z’n lekkerst zien. In de hoofdrol staan groente en fruit van eigen bodem en van het seizoen. Met al die lekkere, pure en verse ingrediënten krijg
+                        je meteen zin om aan de slag te gaan in de keuken. Van ontbijt, lunch en diner, tot taarten, borrelhapjes en bijgerechten. Allemaal met liefde bedacht en uitvoerig getest in Allerhande's testkeuken.
+                    </p>
+                </article>
+            </li>
+            <li>
 
-                    Vers van de akkers, zo op ons bord. En dat elke dag opnieuw. In dit Allerhande kookboek laten we Nederland op z’n lekkerst zien. In de hoofdrol staan groente en fruit van eigen bodem en van het seizoen. Met al die lekkere, pure en verse ingrediënten krijg
-                    je meteen zin om aan de slag te gaan in de keuken. Van ontbijt, lunch en diner, tot taarten, borrelhapjes en bijgerechten. Allemaal met liefde bedacht en uitvoerig getest in Allerhande's testkeuken.
-                </p>
-            </article>
+                <article>
+                    <img src="images/img_article2.jpeg" alt="">
 
-            <article>
-                <img src="images/img_article2.jpeg" alt="">
+                    <h3>Nu in het magazine</h3>
 
-                <h3>Nu in het magazine</h3>
+                    <p>
+                        Het nieuwe Allerhande-magazine staat vol met lekkere én betaalbare recepten, maar ook snelle en gezonde gerechten ontbreken niet. Terug in het ritme komen was nog nooit zo makkelijk! Bekijk het magazine online of doe inspiratie op bij:
 
-                <p>
-                    Het nieuwe Allerhande-magazine staat vol met lekkere én betaalbare recepten, maar ook snelle en gezonde gerechten ontbreken niet. Terug in het ritme komen was nog nooit zo makkelijk! Bekijk het magazine online of doe inspiratie op bij:
-                    <ul>
-                        <li><a href="#">Alle nieuwe recepten</a></li>
-                        <li>
-                            <a href="#">Eenpansgerechten</a>
-                        </li>
-                        <li>
-                            <a href="#">Snelle lunch</a>
-                        </li>
-                        <li>
-                            <a href="#">Witlof</a>
-                        </li>
-                        <li>
-                            <a href="#">Met Hugo Kennis bij de teler</a>
-                        </li>
-                        <li>
-                            <a href="#">Wat eten we vandaag?</a>
-                        </li>
-                        <li>
-                            <a href="#">Weekmenu's</a>
-                        </li>
-                    </ul>
-                </p>
-            </article>
-        </section>
+                    </p>
+
+                    <nav>
+                        <ul>
+                            <li><a href="#">Alle nieuwe recepten</a></li>
+                            <li>
+                                <a href="#">Eenpansgerechten</a>
+                            </li>
+                            <li>
+                                <a href="#">Snelle lunch</a>
+                            </li>
+                            <li>
+                                <a href="#">Witlof</a>
+                            </li>
+                            <li>
+                                <a href="#">Met Hugo Kennis bij de teler</a>
+                            </li>
+                            <li>
+                                <a href="#">Wat eten we vandaag?</a>
+                            </li>
+                            <li>
+                                <a href="#">Weekmenu's</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </article>
+            </li>
+        </ul>
 
         <!--SECTION 4: 3 losse recepten, andere opmaak dan section 4-->
 
         <section>
+            <h2>Losse recepten</h2>
 
             <ul>
                 <li>
-                    <img src="images/pompoensoep.jpeg" alt="Pompoensoep">
-                    <p>
-                        <a href="#"><em>Recept</em>
-                        Pompoensoep ></a>
-                    </p>
+                    <a href="#">
+                        <article>
+                            <img src="images/pompoensoep.jpeg" alt="Pompoensoep">
+
+                            <em>Recept</em> Pompoensoep >
+                        </article>
+                    </a>
                 </li>
                 <li>
-                    <img src="images/stampotboerenkool.jpeg" alt="Stampot boerenkool met geroosterde pompoen, spek en walnoten">
-                    <p>
-                        <a href="#"><em>Recept</em>
-                        Stampot boerenkool met geroosterde pompoen, spek en walnoten</a>
-                    </p>
+                    <a href="#">
+                        <article>
+
+                            <img src="images/stampotboerenkool.jpeg" alt="Stampot boerenkool met geroosterde pompoen, spek en walnoten">
+
+                            <em>Recept</em> Stampot boerenkool met geroosterde pompoen, spek en walnoten >
+                        </article>
+                    </a>
                 </li>
 
                 <li>
-                    <img src="images/flespompoen.jpeg" alt="Gevulde flespompoen (basisrecept)">
-                    <p>
-                        <a href="#"> <em>Recept</em>Gevulde flespompoen (basisrecept) ></a>
-                    </p>
+                    <a href="#">
+                        <article>
+                            <img src="images/flespompoen.jpeg" alt="Gevulde flespompoen (basisrecept)">
+                            <em>Recept</em> Gevulde flespompoen (basisrecept) >
+
+                        </article>
+                    </a>
                 </li>
             </ul>
         </section>
@@ -277,8 +312,7 @@
     <footer>
 
 
-        <section>
-            <h2>Footer menu</h2>
+        <nav>
             <ul>
                 <li>
                     <h3>Nu in het magazine</h3>
@@ -312,20 +346,27 @@
                     </ul>
                 </li>
             </ul>
-        </section>
+        </nav>
 
-        <section>
-            <h2>Footer footer</h2>
+        <nav>
+            <img width="10%" src="images/Albert_Heijn_Logo.svg" alt="Logo">
 
-            <img src="images/Albert_Heijn_Logo.svg" alt="Logo">
             <ul>
-                <li><img src="images/facebook.svg" alt="Facebook"></li>
-                <li><img src="images/twitter.svg" alt="Twitter"></li>
-                <li><img src="images/instagram.svg" alt="Instagram"></li>
+                <li>
+                    <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+                </li>
             </ul>
+        </nav>
 
+        <nav>
             <ul>
-                <li><a href="#">Algemeene voorwaarden</a></li>
+                <li><a href="#">Algemene voorwaarden</a></li>
                 <li><a href="#">Zakelijke algemene voorwaarden</a></li>
                 <li><a href="#">Bonusvoorwaarden</a></li>
                 <li><a href="#">Privacybeleid</a></li>
@@ -333,7 +374,7 @@
                 <li><a href="#">Over AH</a></li>
                 <li><a href="#">Kwetsbaarheid melden</a></li>
             </ul>
-        </section>
+        </nav>
         <!--NIX18-->
         <!--Betaalmogelijkheden-->
 
