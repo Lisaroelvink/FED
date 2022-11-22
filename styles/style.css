@@ -1,276 +1,531 @@
-/**************/
-
-
-/* CSS REMEDY */
-
-
-/**************/
-
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-}
-
-html,
-body {
-    margin: 0;
-    /* overscoll: https://stackoverflow.com/questions/30636930/disable-web-page-navigation-on-swipeback-and-forward */
-    overscroll-behavior-x: none;
-}
-
-button,
-summary {
-    cursor: pointer;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-img {
-    /* Haal onnodige ruimte onder afbeeldingen weg */
-    vertical-align: bottom;
-}
-
-a {
-    text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-}
-
-
-/*********************/
-
-
-/* CUSTOM PROPERTIES */
-
-
-/*********************/
-
-:root {
-    /* kleuren */
-    --color-text-dark: #111;
-    --color-text-light: #fff;
-    --color-background: #eee;
-    --color-card-background: #fff;
-    --color-main-nav-border: #acacac;
-    /* fonts */
-    --font-greycliff: 'Greycliff';
-    --font-hamburg: 'Hamburg';
-    --font-weight-normal: 400;
-    --font-weight-bold: 700;
-    --font-weight-heavy: 900;
-    /* shadows */
-    --shadow-card: 0 15px 18px 0 rgb(0 0 0 / 5%)
-}
-
-
-/****************/
-
-
-/* JOUW STYLING */
-
-
-/****************/
-
-
-/* jouw code */
-
-
-/* Font face: https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face */
-
-
-/* Meerdere weights: https://stackoverflow.com/questions/28279989/multiple-font-weights-one-font-face-query */
-
-
-/* Font weight schaal: https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#:~:text=Note%20that%20when%20using%20relative,%2C%20and%20heavy%20(900) */
-
-@font-face {
-    font-weight: 400;
-    font-style: normal;
-    font-family: "Hamburg";
-    src: url("../fonts/hamburg-ah-regular.ttf") format("truetype");
-}
-
-@font-face {
-    font-weight: 400;
-    font-style: normal;
-    font-family: "Greycliff";
-    src: url("../fonts/greycliff-cf-regular.ttf") format("truetype");
-}
-
-@font-face {
-    font-weight: 400;
-    font-style: italic;
-    font-family: "Greycliff";
-    src: url("../fonts/greycliff-cf-regular-oblique.ttf") format("truetype");
-}
-
-@font-face {
-    font-weight: 700;
-    font-style: normal;
-    font-family: "Greycliff";
-    src: url("../fonts/greycliff-cf-bold.ttf") format("truetype");
-}
-
-@font-face {
-    font-weight: 700;
-    font-style: italic;
-    font-family: "Greycliff";
-    src: url("../fonts/greycliff-cf-bold-oblique.ttf") format("truetype");
-}
-
-@font-face {
-    font-weight: 900;
-    font-style: normal;
-    font-family: "Greycliff";
-    src: url("../fonts/greycliff-cf-heavy.ttf") format("truetype");
-}
-
-body {
-    color: var(--color-text-dark);
-    background-color: var(--color-background);
-}
-
-body>header {
-    font-family: var(--font-hamburg);
-}
-
-body>footer {
-    font-family: var(--font-hamburg)
-}
-
-
-/* MAIN */
-
-main {
-    font-family: var(--font-greycliff);
-}
-
-main img {
-    width: 100%;
-}
-
-
-/* MAIN NAV */
-
-main>header>nav {
-    display: flex;
-    position: relative;
-}
-
-
-/* Main nav list - Closed */
-
-main>header>nav>ul {
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    background: var(--color-text-dark);
-    flex-wrap: wrap;
-    display: flex;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height .2s ease-out;
-}
-
-
-/* Main nav list - Open */
-
-main>header>nav>ul.open {
-    max-height: 165px;
-    transition: max-height .5s ease-out;
-}
-
-main>header>nav>ul>li {
-    flex-basis: 50%;
-    border-top: 1px solid var(--color-main-nav-border);
-    padding: 1rem;
-}
-
-main>header>nav>ul>li>a {
-    color: var(--color-text-light);
-    font-weight: var(--font-weight-bold);
-}
-
-
-/* SECTION 2: carousel */
-
-
-/* Titels */
-
-main>section:nth-of-type(2)>h2 {
-    padding: 0 1rem;
-    text-align: center;
-}
-
-main>section:nth-of-type(2)>h3 {
-    padding: 0 1rem;
-    text-align: center;
-}
-
-
-/* Lijst met artikelen */
-
-main>section:nth-of-type(2)>ul {
-    padding: 1rem;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    padding-bottom: 2rem;
-    /* scroll-snap-type: x mandatory; */
-    display: flex;
-    /* ruimte tussen elements */
-    gap: 1rem;
-}
-
-main>section:nth-of-type(2)>ul article {
-    /* scroll-snap-align: center;
-    scroll-snap-stop: always; */
-    border-radius: 1rem;
-    background: var(--color-card-background);
-    overflow: hidden;
-    width: 17.75rem;
-    color: var(--color-text-dark);
-    box-shadow: var(--shadow-card);
-}
-
-
-/* Img wrapper */
-
-main>section:nth-of-type(2)>ul article>div:nth-of-type(1) {
-    height: 8.5rem;
-}
-
-
-/* Img */
-
-main>section:nth-of-type(2)>ul article>div:nth-of-type(1) img {
-    /* maakt afbeelding zelfde grootte als div */
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
-
-
-/* Recept tags */
-
-main>section:nth-of-type(2)>ul article ul {
-    display: flex;
-    gap: .5rem;
-    padding: .75rem 1rem;
-    background: var(--color-background);
-}
-
-main>section:nth-of-type(2)>ul article h4 {
-    padding: 1rem;
-}
+    /* Font face: https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face */
+    /* Meerdere weights: https://stackoverflow.com/questions/28279989/multiple-font-weights-one-font-face-query */
+    /* Font weight schaal: https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#:~:text=Note%20that%20when%20using%20relative,%2C%20and%20heavy%20(900) */
+    
+    @font-face {
+        font-weight: 400;
+        font-style: normal;
+        font-family: "Hamburg";
+        src: url("../fonts/hamburg-ah-regular.ttf") format("truetype");
+    }
+    
+    @font-face {
+        font-weight: 400;
+        font-style: normal;
+        font-family: "Greycliff";
+        src: url("../fonts/greycliff-cf-regular.ttf") format("truetype");
+    }
+    
+    @font-face {
+        font-weight: 400;
+        font-style: italic;
+        font-family: "Greycliff";
+        src: url("../fonts/greycliff-cf-regular-oblique.ttf") format("truetype");
+    }
+    
+    @font-face {
+        font-weight: 700;
+        font-style: normal;
+        font-family: "Greycliff";
+        src: url("../fonts/greycliff-cf-bold.ttf") format("truetype");
+    }
+    
+    @font-face {
+        font-weight: 700;
+        font-style: italic;
+        font-family: "Greycliff";
+        src: url("../fonts/greycliff-cf-bold-oblique.ttf") format("truetype");
+    }
+    
+    @font-face {
+        font-weight: 900;
+        font-style: normal;
+        font-family: "Greycliff";
+        src: url("../fonts/greycliff-cf-heavy.ttf") format("truetype");
+    }
+    /**************/
+    /* CSS REMEDY */
+    /**************/
+    
+    *,
+    *::after,
+    *::before {
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        margin: 0;
+        /* overscoll: https://stackoverflow.com/questions/30636930/disable-web-page-navigation-on-swipeback-and-forward */
+        overscroll-behavior-x: none;
+    }
+    
+    button,
+    summary {
+        cursor: pointer;
+    }
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    img {
+        /* Haal onnodige ruimte onder afbeeldingen weg */
+        vertical-align: bottom;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+    }
+    /*********************/
+    /* CUSTOM PROPERTIES */
+    /*********************/
+    
+     :root {
+        /* kleuren */
+        --color-text-dark: #111;
+        --color-text-light: #fff;
+        --color-background: #fff;
+        --color-light-grey: #f0f4f7;
+        --color-background-footer: #eee;
+        --color-card-background: #fff;
+        --color-main-nav-border: #acacac;
+        --color-ah-blue: #00ade6;
+        --color-ah-red: #ea3d3d;
+        /* fonts */
+        --font-greycliff: 'Greycliff';
+        --font-hamburg: 'Hamburg';
+        --font-weight-normal: 400;
+        --font-weight-bold: 700;
+        --font-weight-heavy: 900;
+        /* shadows */
+        --shadow-card: 0 1em 1.125em 0 rgb(0 0 0 / 5%);
+        --shadow-card-hover: 0 1em 1.125em 0 rgb(0 0 0 / 10%);
+    }
+    /****************/
+    /* JOUW STYLING */
+    /****************/
+    /* jouw code */
+    
+    body {
+        color: var(--color-text-dark);
+        background-color: var(--color-background);
+    }
+    
+    body>header {
+        font-family: var(--font-hamburg);
+    }
+    
+    body>footer {
+        font-family: var(--font-hamburg)
+    }
+    /* MAIN */
+    
+    main {
+        font-family: var(--font-greycliff);
+    }
+    
+    main img {
+        width: 100%;
+    }
+    
+    header {
+        background-color: var(--color-background);
+        border: 1px solid var(--color-light-grey);
+    }
+    /* Header NAV HAMBURGERMENU */
+    
+    body>header>nav>ul a {
+        color: var(--color-text-dark);
+        padding: 1em;
+        display: flex;
+        border-top: 1px solid var(--color-light-grey);
+    }
+    
+    body>header>nav>ul>li:nth-of-type(1)>a {
+        color: var(--color-ah-blue);
+    }
+    
+    header>nav>ul a:hover {
+        color: grey;
+    }
+    /* Search bar header */
+    
+    header>div {
+        padding: 1em;
+    }
+    
+    header form:nth-of-type(1) {
+        background-color: var(--color-text-light);
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--color-light-grey);
+        width: 100%;
+        border-radius: 2em;
+    }
+    
+    header form:nth-of-type(1)>input {
+        background-color: var(--color-light-grey);
+        padding: 1em;
+        border-color: var(--color-light-grey);
+        border-style: solid;
+        font-family: "Hamburg";
+        font-size: 1em;
+        border-radius: 2em 0em 0em 2em;
+        flex-grow: 1;
+    }
+    
+    header form button {
+        background-color: var(--color-light-grey);
+        border-color: var(--color-light-grey);
+        border-style: solid;
+        padding: 1em;
+        border-radius: 0em 2em 2em 0em;
+    }
+    /* MAIN NAV */
+    
+    main>header>nav button {
+        color: var(--color-background);
+        background-color: var(--color-text-dark);
+        border: none;
+        font-family: "Hamburg";
+    }
+    
+    main>header>nav {
+        display: flex;
+        position: relative;
+        background-color: var(--color-text-dark);
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    
+    main>header>nav img {
+        width: 8rem;
+        justify-content: space-between;
+    }
+    /* Main nav list - Closed */
+    
+    main>header>nav>ul {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        background: var(--color-text-dark);
+        flex-wrap: wrap;
+        display: flex;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .2s ease-out;
+    }
+    /* Main nav list - Open */
+    
+    main>header>nav>ul.open {
+        max-height: 165px;
+        transition: max-height .5s ease-out;
+    }
+    
+    main>header>nav>ul>li {
+        flex-basis: 50%;
+        border-top: 1px solid var(--color-main-nav-border);
+        padding: 1rem;
+    }
+    
+    main>header>nav>ul>li>a {
+        color: var(--color-text-light);
+        font-weight: var(--font-weight-bold);
+    }
+    /*******************************************************/
+    /*********************** SECTION 1 *********************/
+    /*******************************************************/
+    
+    main>section:nth-of-type(1) {
+        background-image: linear-gradient(180deg, transparent, #000), url("../images/flespompoen.jpeg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+        border-radius: 1em;
+    }
+    
+    main>section:nth-of-type(1) h1 {
+        padding: 1em;
+        color: var(--color-text-light)
+    }
+    /* Background img van maken, button vaste width geven */
+    /* input flex-grow geven */
+    
+    main>section:nth-of-type(1)>form {
+        display: flex;
+    }
+    
+    main>section:nth-of-type(1)>form>input {
+        padding: 1em;
+        font-size: 1em;
+        border: none;
+        border-radius: .125em;
+    }
+    
+    main>section:nth-of-type(1)>form>button {
+        background-color: var(--color-ah-red);
+        border: none;
+        padding: 1em;
+        border-radius: .125em;
+    }
+    
+    main>section:nth-of-type(1)>ul {
+        display: flex;
+        margin: 1em;
+        gap: 1em;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    main>section:nth-of-type(1)>ul a {
+        color: var(--color-text-light);
+        font-weight: var(--font-weight-bold);
+    }
+    
+    main>section:nth-of-type(1) ul a::after {
+        content: '>';
+    }
+    /*******************************************************/
+    /*********************** SECTION 2 *********************/
+    /*******************************************************/
+    
+    main>section:nth-of-type(2) {
+        margin-bottom: 2rem;
+    }
+    /* Titels */
+    
+    main>section:nth-of-type(2)>h2 {
+        padding: 0 1rem;
+        text-align: center;
+    }
+    
+    main>section:nth-of-type(2)>h3 {
+        padding: 0 1rem;
+        text-align: center;
+    }
+    /* Lijst met artikelen */
+    
+    main>section:nth-of-type(2)>ul {
+        padding: 1rem;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-bottom: 2rem;
+        display: flex;
+        /* ruimte tussen elements */
+        gap: 1rem;
+    }
+    
+    main>section:nth-of-type(2)>ul article {
+        border-radius: 1rem;
+        background: var(--color-card-background);
+        overflow: hidden;
+        width: 17.75rem;
+        color: var(--color-text-dark);
+        box-shadow: var(--shadow-card);
+        transition: all .4s ease-out;
+    }
+    
+    main>section:nth-of-type(2)>ul article:hover {
+        box-shadow: var(--shadow-card-hover);
+        transform: translateY(-.5em);
+    }
+    /* Img wrapper */
+    
+    main>section:nth-of-type(2)>ul article>div:nth-of-type(1) {
+        height: 8.5rem;
+    }
+    /* Img */
+    
+    main>section:nth-of-type(2)>ul article>div:nth-of-type(1) img {
+        /* maakt afbeelding zelfde grootte als div */
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    /* Recept tags */
+    
+    main>section:nth-of-type(2)>ul article ul {
+        display: flex;
+        gap: .5rem;
+        padding: .75rem 1rem;
+        background: var(--color-background-footer);
+    }
+    
+    main>section:nth-of-type(2)>ul article h4 {
+        padding: 1rem;
+    }
+    /* A Meer recepten */
+    
+    main>section:nth-of-type(2)>a:last-child {
+        font-style: var(--font-weight-bold);
+        color: var(--color-text-light);
+        background-color: var(--color-ah-red);
+        border-color: var(--color-ah-red);
+        padding: 1rem;
+        border-radius: .25em;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: fit-content;
+    }
+    
+    main>ul article h3,
+    main>ul article p,
+    main>ul article a {
+        padding: 0em 1em;
+        display: block;
+    }
+    
+    main>ul article h3 {
+        padding-top: 1em;
+    }
+    
+    main>ul article a {
+        color: var(--color-text-dark);
+        text-decoration: underline;
+    }
+    
+    main>ul article a:hover {
+        color: var(--color-ah-blue);
+    }
+    
+    main>ul article p {
+        line-height: 1.4em;
+    }
+    
+    main>ul article ul {
+        list-style-type: initial;
+        padding-left: 2em;
+    }
+    
+    main>ul article li {
+        line-height: 1.4em;
+    }
+    /*******************************************************/
+    /*********************** SECTION 3 *********************/
+    /*******************************************************/
+    
+    main>section:nth-of-type(3) {
+        margin-top: 1em;
+        padding: 1em;
+    }
+    
+    main>section:nth-of-type(3) h2 {
+        opacity: 0;
+        height: 0;
+    }
+    
+    main>section:nth-of-type(3) img {
+        max-height: 12em;
+        object-fit: cover;
+        margin-bottom: .5em;
+    }
+    
+    main>section:nth-of-type(3) article {
+        color: var(--color-text-dark);
+        padding-bottom: 1em;
+    }
+    
+    main>section:nth-of-type(3) em {
+        font-weight: bold;
+        font-style: normal;
+    }
+    
+    main>section:nth-of-type(3) span {
+        width: 2em;
+        height: .125em;
+        background-color: var(--color-text-dark);
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0em .25em;
+    }
+    
+    main>section:nth-of-type(3) div {
+        transition: all .2s ease-out;
+    }
+    
+    main>section:nth-of-type(3) a:hover div {
+        transform: translateX(.4em);
+    }
+    /*******************************************************/
+    /************************ FOOTER ***********************/
+    /*******************************************************/
+    
+    footer {
+        background-color: var(--color-background-footer);
+        padding: 1em;
+    }
+    
+    footer>nav:nth-of-type(2)>img {
+        width: 3em;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    footer>nav:nth-of-type(2)>ul {
+        display: flex;
+        justify-content: center;
+        margin: 2em 0em;
+        gap: 1em;
+    }
+    
+    footer>nav:nth-of-type(2)>ul li {
+        width: 2em;
+    }
+    
+    footer>nav:nth-of-type(3) {
+        text-align: center;
+        margin-top: 3.5em;
+        padding-bottom: 3.5em;
+    }
+    
+    footer>nav:nth-of-type(3) li {
+        padding: .5rem;
+    }
+    
+    footer>nav:nth-of-type(3) a {
+        color: var(--color-text-dark);
+    }
+    
+    footer>nav:nth-of-type(3) a:hover {
+        color: var(--color-ah-blue);
+    }
+    
+    footer>nav:nth-of-type(1) h3 {
+        padding-bottom: 1em;
+        border-bottom: 2px solid lightgrey;
+    }
+    
+    footer>nav:nth-of-type(1) ul {
+        padding: 1em 0em;
+    }
+    
+    footer>nav:nth-of-type(1) a {
+        color: var(--color-text-dark);
+        line-height: 1.6em;
+    }
+    
+    footer>nav:nth-of-type(1) a {
+        color: var(--color-text-dark);
+        line-height: 1.6em;
+    }
+    
+    footer>nav:nth-of-type(1) a:hover {
+        color: var(--color-ah-blue);
+    }

@@ -286,6 +286,8 @@ ul
   - Van boven naar beneden werken
   - Navigatie op het einde maken
 
+  - Form: width: 0maken, fles grow 2 geven.
+
 
 </details>
 
@@ -352,10 +354,17 @@ ul
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Screenreader oefenen
+  - Hover states toevoegen
+  - rem, em en px aanpassen
+  - clamp ()
+  Plan van aanpak:
+  - Eerste section stylen
+  - Main
+  - Footer stylen
+  - Laatste: navigatie balk
+  - Verschillende CSS style sheets maken per pagina
+  - Begin maken 2e pagina
 
 </details>
 

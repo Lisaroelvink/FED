@@ -11,27 +11,32 @@ console.log("hi");
 // 5. Voeg een className aan dat element toe door `.classList.add('CLASSNAME')`
 
 
+
+// Header nav hamburgermenu
+
+// var headerNavButton = document.querySelector('header>nav>button')
+
+// headerNavButton.addEventListener('toggle', HeaderNavOpen);
+
+// funtion HeaderNavOpen() {
+
+//  headerNavButton.classList.add('');
+//}
+
+
+
+
 // Main nav dropdown
 
 // Selecteer button in de main nav. Voor querySelector mag je css selectors gebruiken
 var mainNavButton = document.querySelector('main>header>nav>button')
 
-var isMainNavOpen = false
 
 function onMainNavButtonClick() {
     var list = document.querySelector('main>header>nav>ul')
 
-    // list.classList.add('open')
 
-
-    // Kan optioneel weggehaald en lijn hierboven weer un-commenten
-    if (isMainNavOpen === false) {
-        list.classList.add('open')
-        isMainNavOpen = true
-    } else {
-        list.classList.remove('open')
-        isMainNavOpen = false
-    }
+    list.classList.toggle('open')
 }
 
 

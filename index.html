@@ -13,13 +13,14 @@
 </head>
 
 <body>
+
     <header>
         <nav>
             <!--HAMBURGER MENU-->
             <!--# zodat de links nergens naar navigeren-->
 
             <button aria-label="Website menu"><img width="40px" height="40px" src="images/menu.svg" alt="Menu"></button>
-            <a href="/" aria-label="Naar Albert heijn home pagina"><img width="40px" height="40px" src="images/Albert_Heijn_Logo.svg" alt="Albert heijn logo"></a>
+            <a href="#" aria-label="Naar Albert heijn home pagina"><img width="40px" height="40px" src="images/Albert_Heijn_Logo.svg" alt="Albert heijn logo"></a>
             <a href="#" aria-label="Naar inloggen"><img width="20px" height="20px" src="images/icon-user.svg" alt="Inlog icoon"></a>
             <a href="#" aria-label="Naar favorieten"><img width="20px" height="20px" src="images/icon-heart.svg" alt="Favorieten icoon"></a>
             <a href="#" aria-label="Naar winkelmandje"><img width="20px" height="20px" src="images/icon-shoppingcart.svg" alt="Winkelmandje icoon"></a>
@@ -37,14 +38,18 @@
 
         <!--SEARCH BAR 1-->
 
-        <form action="">
-            <input type="text" placeholder="Waar ben je naar op zoek?">
-            <button type="submit" aria-label="Zoeken"><img width="20px" height="20px"src="images/icon-search.svg" alt="Zoek icoon"></button>
-        </form>
+        <div>
+            <form action="">
+
+                <input type="text" placeholder="Waar ben je naar op zoek?">
+                <button type="submit" aria-label="Zoeken"><img width="20px" height="20px"src="images/icon-search.svg" alt="Zoek icoon"></button>
+
+            </form>
+        </div>
     </header>
 
     <main>
-        <!-- 2E Navigatie allerhande, BUTTONS MAKEN-->
+        <!-- 2E Navigatie allerhande-->
 
         <header>
 
@@ -67,11 +72,11 @@
 
         <section>
             <h1>Vind makkelijk het beste recept</h1>
-            <img src="images/flespompoen.jpeg" alt="Afbeelding van flespompoen">
+
 
             <form>
                 <input type="text" placeholder="Zoek een recept">
-                <button type="submit"> </button>
+                <button type="submit" aria-label="Zoeken"><img width="20px" height="20px"src="images/icon-search.svg" alt="Zoek icoon"></button>
             </form>
 
             <ul>
@@ -89,7 +94,7 @@
             <h2>Wat eten we vandaag?</h2>
             <h3>Handig: eten voor €2 p.p. (o.b.v. 4 personen)</h3>
 
-            <!--8x article in carousel, moet deze in een list??-->
+            <!--8x article in carousel-->
             <ul>
                 <li>
                     <a href="#">
@@ -125,7 +130,9 @@
                 <li>
                     <a href="#">
                         <article>
-                            <img src="images/knolselderij-lasagne.jpeg" alt="knolselderij lasagne">
+                            <div>
+                                <img src="images/knolselderij-lasagne.jpeg" alt="knolselderij lasagne">
+                            </div>
                             <ul>
                                 <li>20 min</li>
                                 <li>840 kcal</li>
@@ -140,7 +147,9 @@
                 <li>
                     <a href="#">
                         <article>
-                            <img src="images/shakshuka.jpeg" alt="shakshuka">
+                            <div>
+                                <img src="images/shakshuka.jpeg" alt="shakshuka">
+                            </div>
                             <ul>
                                 <li>Receptvideo</li>
                                 <li>01:24</li>
@@ -153,7 +162,9 @@
                 <li>
                     <a href="#">
                         <article>
-                            <img src="images/preitaart.jpeg" alt="preitaart met oude kaas">
+                            <div>
+                                <img src="images/preitaart.jpeg" alt="preitaart met oude kaas">
+                            </div>
                             <ul>
                                 <li>Receptvideo</li>
                                 <li>00:49</li>
@@ -167,7 +178,9 @@
                 <li>
                     <a href="#">
                         <article>
-                            <img src="images/rostimetspek.jpeg" alt="rosti met spek en sperziebonensalade">
+                            <div>
+                                <img src="images/rostimetspek.jpeg" alt="rosti met spek en sperziebonensalade">
+                            </div>
                             <ul>
                                 <li>45 min</li>
                                 <li>540 kcal</li>
@@ -182,7 +195,9 @@
                 <li>
                     <a href="#">
                         <article>
-                            <img src="images/paprikasoep.jpeg" alt="paprikasoep met tomaat en knappirige tortillareepjes">
+                            <div>
+                                <img src="images/paprikasoep.jpeg" alt="paprikasoep met tomaat en knappirige tortillareepjes">
+                            </div>
                             <ul>
                                 <li>Receptenvideo</li>
                                 <li>03:27</li>
@@ -195,7 +210,9 @@
                 <li>
                     <a href="#">
                         <article>
-                            <img src="images/vegetarisch-balletjes.jpeg" alt="vegetarische balletjes met aardappelpuree">
+                            <div>
+                                <img src="images/vegetarisch-balletjes.jpeg" alt="vegetarische balletjes met aardappelpuree">
+                            </div>
                             <ul>
                                 <li>30 min</li>
                                 <li>Vegetarisch</li>
@@ -232,7 +249,6 @@
                 </article>
             </li>
             <li>
-
                 <article>
                     <img src="images/img_article2.jpeg" alt="">
 
@@ -280,8 +296,9 @@
                     <a href="#">
                         <article>
                             <img src="images/pompoensoep.jpeg" alt="Pompoensoep">
-
-                            <em>Recept</em> Pompoensoep >
+                            <div>
+                                <em>Recept</em> <span></span> Pompoensoep >
+                            </div>
                         </article>
                     </a>
                 </li>
@@ -290,8 +307,9 @@
                         <article>
 
                             <img src="images/stampotboerenkool.jpeg" alt="Stampot boerenkool met geroosterde pompoen, spek en walnoten">
-
-                            <em>Recept</em> Stampot boerenkool met geroosterde pompoen, spek en walnoten >
+                            <div>
+                                <em>Recept</em> <span></span> Stampot boerenkool met geroosterde pompoen, spek en walnoten >
+                            </div>
                         </article>
                     </a>
                 </li>
@@ -300,8 +318,9 @@
                     <a href="#">
                         <article>
                             <img src="images/flespompoen.jpeg" alt="Gevulde flespompoen (basisrecept)">
-                            <em>Recept</em> Gevulde flespompoen (basisrecept) >
-
+                            <div>
+                                <em>Recept</em> <span></span> Gevulde flespompoen (basisrecept) >
+                            </div>
                         </article>
                     </a>
                 </li>
@@ -349,7 +368,7 @@
         </nav>
 
         <nav>
-            <img width="10%" src="images/Albert_Heijn_Logo.svg" alt="Logo">
+            <img src="images/Albert_Heijn_Logo.svg" alt="Logo">
 
             <ul>
                 <li>
