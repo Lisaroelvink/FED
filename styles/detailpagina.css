@@ -1,0 +1,273 @@
+main {
+    background-color: var(--color-background-footer);
+}
+
+
+/*******************************************************/
+
+
+/*********************** SECTION 1 *********************/
+
+
+/*******************************************************/
+
+
+/* "Video" */
+
+main>section:nth-of-type(1)>img {
+    height: 18rem;
+    object-fit: cover;
+}
+
+
+/* Witte card */
+
+main>section:nth-of-type(1)>div {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin: 0em 1em;
+    margin-top: -2em;
+    background: var(--color-card-background);
+    border-radius: 1em;
+    padding: 1em;
+    word-break: break-word;
+}
+
+
+/* Terug navigatie */
+
+main>section:nth-of-type(1)>div>div {
+    display: flex;
+}
+
+
+/*******************************************************/
+
+
+/*********************** SECTION 2 *********************/
+
+
+/*******************************************************/
+
+main>section:nth-of-type(2) {
+    padding: 1em;
+    margin: 0em 1em;
+    border-radius: 1em;
+    background-color: var(--color-card-background);
+    color: var(--color-text-dark);
+}
+
+main>section:nth-of-type(2)>form label {
+    display: block;
+    padding-bottom: 0.5em;
+    line-height: 1.5;
+}
+
+main>section:nth-of-type(2)>form label>input {
+    margin-right: 1em;
+}
+
+main>section:nth-of-type(2)>form label>span {
+    font-weight: bold;
+    display: inline-block;
+    margin-right: .5em;
+    min-width: 2em;
+    text-align: right;
+}
+
+
+/*******************************************************/
+
+
+/*********************** SECTION 3 *********************/
+
+
+/*******************************************************/
+
+main>section:nth-of-type(3) {
+    padding: 1em;
+    margin: 0em 1em;
+    background: var(--color-card-background);
+    border-radius: 1em;
+}
+
+main>section:nth-of-type(3)>ol {
+    list-style: none;
+    padding: 0;
+}
+
+main>section:nth-of-type(3)>ol li {
+    margin-top: 2em;
+    display: flex;
+    gap: 1em;
+}
+
+main>section:nth-of-type(3)>ol li span:nth-of-type(1) {
+    font-size: 1.375em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 2px solid var(--color-text-dark);
+}
+
+
+/*******************************************************/
+
+
+/*********************** SECTION 4 *********************/
+
+
+/*******************************************************/
+
+main>section:nth-of-type(4) {
+    margin-bottom: 2rem;
+}
+
+
+/* Titels */
+
+main>section:nth-of-type(4)>h2 {
+    padding: 0 1rem;
+    text-align: center;
+}
+
+main>section:nth-of-type(4)>h3 {
+    padding: 0 1rem;
+    text-align: center;
+}
+
+
+/* Lijst met artikelen */
+
+main>section:nth-of-type(4)>ul {
+    padding: 1rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-bottom: 2rem;
+    display: flex;
+    /* ruimte tussen elements */
+    gap: 1rem;
+}
+
+main>section:nth-of-type(4)>ul article {
+    border-radius: 1rem;
+    background: var(--color-card-background);
+    overflow: hidden;
+    width: 17.75rem;
+    color: var(--color-text-dark);
+    box-shadow: var(--shadow-card);
+    transition: all .4s ease-out;
+}
+
+main>section:nth-of-type(4)>ul article:hover {
+    box-shadow: var(--shadow-card-hover);
+    transform: translateY(-.5em);
+}
+
+
+/* Img wrapper */
+
+main>section:nth-of-type(4)>ul article>div:nth-of-type(1) {
+    height: 8.5rem;
+}
+
+
+/* Img */
+
+main>section:nth-of-type(4)>ul article>div:nth-of-type(1) img {
+    /* maakt afbeelding zelfde grootte als div */
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Recept tags */
+
+main>section:nth-of-type(4)>ul article ul {
+    display: flex;
+    gap: .5rem;
+    padding: .75rem 1rem;
+    background: var(--color-background-footer);
+}
+
+main>section:nth-of-type(4)>ul article h4 {
+    padding: 1rem;
+}
+
+main>ul article h3,
+main>ul article p,
+main>ul article a {
+    padding: 0em 1em;
+    display: block;
+}
+
+main>ul article h3 {
+    padding-top: 1em;
+}
+
+main>ul article a {
+    color: var(--color-text-dark);
+    text-decoration: underline;
+}
+
+main>ul article a:hover {
+    color: var(--color-ah-blue);
+}
+
+main>ul article p {
+    line-height: 1.4em;
+}
+
+main>ul article ul {
+    list-style-type: initial;
+    padding-left: 2em;
+}
+
+main>ul article li {
+    line-height: 1.4em;
+}
+
+
+/*******************************************************/
+
+
+/*********************** SECTION 5 *********************/
+
+
+/*******************************************************/
+
+main>section:nth-of-type(5) {
+    margin: 0em 1em;
+    background: var(--color-card-background);
+    border-radius: 3em 0 0 0;
+    padding-bottom: 1em;
+}
+
+main>section:nth-of-type(5)>img {
+    border-radius: 3em 0 0 0;
+}
+
+main>section:nth-of-type(5)>h2,
+main>section:nth-of-type(5)>h3 {
+    padding: 0em 1rem;
+}
+
+main>section:nth-of-type(5)>ul {
+    padding: 0em 1rem;
+}
+
+main>section:nth-of-type(5)>ul:nth-of-type(1)>li {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border-top: 1px solid var(--color-text-dark);
+    padding: 1em 0em;
+}
+
+main>section:nth-of-type(5)>ul:nth-of-type(1)>li:nth-of-type(1) {
+    border-top: none;
+}

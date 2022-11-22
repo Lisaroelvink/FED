@@ -14,14 +14,15 @@ console.log("hi");
 
 // Header nav hamburgermenu
 
-// var headerNavButton = document.querySelector('header>nav>button')
+var headerNavButton = document.querySelector('header>nav>button')
+var headerNavList = document.querySelector('header>nav>ul')
 
-// headerNavButton.addEventListener('toggle', HeaderNavOpen);
+function headerNavOpen() {
+    headerNavList.classList.toggle('isNuOpen');
+}
 
-// funtion HeaderNavOpen() {
+headerNavButton.addEventListener('click', headerNavOpen);
 
-//  headerNavButton.classList.add('');
-//}
 
 
 
@@ -30,13 +31,13 @@ console.log("hi");
 
 // Selecteer button in de main nav. Voor querySelector mag je css selectors gebruiken
 var mainNavButton = document.querySelector('main>header>nav>button')
-
+var mainNavList = document.querySelector('main>header>nav>ul')
 
 function onMainNavButtonClick() {
-    var list = document.querySelector('main>header>nav>ul')
 
 
-    list.classList.toggle('open')
+
+    mainNavList.classList.toggle('open')
 }
 
 

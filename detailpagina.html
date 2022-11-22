@@ -9,6 +9,7 @@
     <title>Allerhande</title>
 
     <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/detailpagina.css" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="images/Albert_Heijn_Logo.svg">
 </head>
 
@@ -16,7 +17,6 @@
 
     <header>
         <nav>
-            <!--HAMBURGER MENU-->
             <!--# zodat de links nergens naar navigeren-->
 
             <button aria-label="Website menu"><img width="40px" height="40px" src="images/menu.svg" alt="Menu"></button>
@@ -66,48 +66,205 @@
             </nav>
         </header>
 
-        <!-- DETAIL EERSTE SECTION -->
+        <!-- SECTION 1: OMSCHRIJVING-->
 
         <section>
-            <a href="#">
-                < Terug</a>
-                    <button>Bewaar</button>
-                    <img src="images/rijstuitdeoven.jpeg" alt="Paddenstoelenrisotto met pancetta">
 
-                    <h1>Paddenstoelenrisotto met pancetta uit de oven</h1>
+            <img src="images/rijstuitdeoven.jpeg" alt="Paddenstoelenrisotto met pancetta">
 
-                    <ul>
-                        <li>660 kcal <a href="#">(voedingswaarde)</a></li>
-                        <li>15 min. bereiden</li>
-                        <li>40 min. oventijd</li>
-                        <li>*sterren* (602)</li>
-                    </ul>
+            <div>
+                <div>
+                    <a href="#">
+                        < Terug</a>
+                            <button>Bewaar</button>
 
-                    <ul>
-                        <li></li><a href="#">oven ></a></li>
-                        <li></li><a href="#">italiaans ></a></li>
-                        <li></li><a href="#">rijst ></a></li>
-                        <li></li><a href="#">hoofdgerecht ></a></li>
-                        <li></li><a href="#">wat eten we vandaag ></a></li>
-                        <li></li><a href="#">herfst ></a></li>
-                        <li></li><a href="#">winter ></a></li>
+                </div>
 
-                    </ul>
+                <h1>Paddenstoelenrisotto met pancetta uit de oven</h1>
+
+                <ul>
+                    <li>660 kcal <a href="#">(voedingswaarde)</a></li>
+                    <li>15 min. bereiden</li>
+                    <li>40 min. oventijd</li>
+                    <li>*sterren* (602)</li>
+                </ul>
+
+                <ul>
+                    <li></li><a href="#">oven ></a></li>
+                    <li></li><a href="#">italiaans ></a></li>
+                    <li></li><a href="#">rijst ></a></li>
+                    <li></li><a href="#">hoofdgerecht ></a></li>
+                    <li></li><a href="#">wat eten we vandaag ></a></li>
+                    <li></li><a href="#">herfst ></a></li>
+                    <li></li><a href="#">winter ></a></li>
+
+                </ul>
+            </div>
         </section>
+
+        <!-- SECTION 2: INGREDIENTEN-->
 
         <section>
             <h2>Ingredienten</h2>
-            <button>4 personen</button>
             <form action="">
-                <label><input type="checkbox">160g pancetta</label>
-                <label><input type="checkbox">160g ongezouten roomboter</label>
+
+
+                <p>
+                    personen
+                    <button type="button">-</button>
+                    <button type="button">+</button>
+                </p>
+
+                <label><input type="checkbox"><span>160g</span> pancetta</label>
+                <label><input type="checkbox"><span>25g</span> ongezouten roomboter</label>
+                <button>Kies producten</button>
             </form>
 
+            <h3>Dit heb je nodig</h3>
+            <ul>
+                <li>ovenschaal of bakvorm (20 x 30 cm)</li>
+            </ul>
+
+
+        </section>
+
+        <!-- SECTION 3: RECEPT-->
+
+        <section>
+            <h2>Aan de slag</h2>
+
+            <ol>
+                <li><span aria-hidden="true">1</span> Verwarm de oven voor op 180 °C. Snijd de pancetta in kleine stukjes. Verhit de boter in een grote koekenpan en bak de pancetta 3 min. Snijd ondertussen de champignons in kwarten. Voeg de champignons toe
+                    aan het spek en bak 5 min. op hoog vuur.
+                </li>
+                <li><span aria-hidden="true">2</span>Doe ondertussen de bouillontabletten en gedroogde paddenstoelen met het kokende water in een kom en laat de bouillon oplossen. Voeg de risotto toe aan het spek en bak 3 min. op laag vuur mee tot de korrels
+                    glazig zijn.</li>
+                <li><span aria-hidden="true">3</span>Verdeel het mengsel over de ovenschaal, schenk de bouillon erbij en roer door. Bak alles ca. 40 min. in het midden van de oven. Neem na 35 min. uit de oven en roer de crème fraîche erdoor. Zet nog ca. 5
+                    min. terug in de oven.</li>
+                <li><span aria-hidden="true">4</span>Snijd ondertussen de peterselie fijn. Neem de risotto uit de oven, meng de kaas en 3/4 van de peterselie door de risotto en bestrooi met de rest van de peterselie.</li>
+            </ol>
+
+            <p>Vegatip Bekijk ook <a href="#">Dit recept</a></p>
+        </section>
+
+        <!-- SECTION 4: GERERELATEERDE-->
+
+        <section>
+            <h2>Gerelateerde recepten</h2>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        <article>
+                            <div>
+                                <img src="images/vegan-pompoensoep.jpeg" alt="vegan pompoensoep">
+                            </div>
+                            <ul>
+                                <li>40 min</li>
+                                <li>550 kcal</li>
+                                <li>Veganistisch</li>
+                            </ul>
+                            <h4>Vegan pompoensoep met volkoren toast</h4>
+                        </article>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <article>
+                            <div>
+                                <img src="images/vegan-pompoensoep.jpeg" alt="vegan pompoensoep">
+                            </div>
+                            <ul>
+                                <li>40 min</li>
+                                <li>550 kcal</li>
+                                <li>Veganistisch</li>
+                            </ul>
+                            <h4>Vegan pompoensoep met volkoren toast</h4>
+                        </article>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <article>
+                            <div>
+                                <img src="images/vegan-pompoensoep.jpeg" alt="vegan pompoensoep">
+                            </div>
+                            <ul>
+                                <li>40 min</li>
+                                <li>550 kcal</li>
+                                <li>Veganistisch</li>
+                            </ul>
+                            <h4>Vegan pompoensoep met volkoren toast</h4>
+                        </article>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <article>
+                            <div>
+                                <img src="images/vegan-pompoensoep.jpeg" alt="vegan pompoensoep">
+                            </div>
+                            <ul>
+                                <li>40 min</li>
+                                <li>550 kcal</li>
+                                <li>Veganistisch</li>
+                            </ul>
+                            <h4>Vegan pompoensoep met volkoren toast</h4>
+                        </article>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- SECTION 5: VOEDINGSWAARDE-->
+        <section>
+            <img src="images/rijstuitdeoven.jpeg" alt="Paddenstoelenrisotto met pancetta">
+
+            <h2>Voedingswaarde</h2>
+            <ul>
+                <li><span>energie</span> 660 kcal</li>
+                <li><span>koolhydraten</span> 59 g</li>
+                <li><span>natrium</span> 1520 mg</li>
+                <li><span>eiwit</span> 25 g</li>
+                <li>
+                    <span>vet</span> 35 g
+                    <span>waarvan verzadigd</span> 20 g
+                </li>
+                <li><span>vezels</span> 4 g</li>
+            </ul>
+
+            <h3>Ontdek meer van dit soort gerechten</h3>
+
+            <ul>
+                <li>
+                    <a href="#"></a>oven ></li>
+                <li>
+                    <a href="#"></a>italiaans ></li>
+                <li>
+                    <a href="#"></a>rijst ></li>
+                <li>
+                    <a href="#"></a>oven ></li>
+                <li>
+                    <a href="#"></a>hoofdgerecht ></li>
+                <li>
+                    <a href="#"></a>wat eten we vandaag ></li>
+                <li>
+                    <a href="#"></a>herfst ></li>
+                <li>
+                    <a href="#"></a>winter ></li>
+            </ul>
+
+            <h3>Ook te zien in</h3>
+            <ul>
+                <li>
+                    <a href="#"></a>2019 nr. 08 - Comfort food</li>
+                <li>
+                    <a href="#"></a>2017 nr. 12 - Kerst</li>
+            </ul>
         </section>
     </main>
+
     <footer>
-
-
         <nav>
             <ul>
                 <li>
