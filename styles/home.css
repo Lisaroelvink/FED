@@ -22,12 +22,6 @@ main>section:nth-of-type(1) h1 {
     color: var(--color-text-light)
 }
 
-
-/* Background img van maken, button vaste width geven */
-
-
-/* input flex-grow geven */
-
 main>section:nth-of-type(1)>form {
     display: flex;
 }
@@ -57,6 +51,10 @@ main>section:nth-of-type(1)>ul {
 main>section:nth-of-type(1)>ul a {
     color: var(--color-text-light);
     font-weight: var(--font-weight-bold);
+}
+
+main>section:nth-of-type(1)>ul a:hover {
+    text-decoration: underline;
 }
 
 main>section:nth-of-type(1) ul a::after {
@@ -155,7 +153,7 @@ main>section:nth-of-type(2)>a:last-child {
     font-style: var(--font-weight-bold);
     color: var(--color-text-light);
     background-color: var(--color-ah-red);
-    border-color: var(--color-ah-red);
+    border: solid 2px var(--color-ah-red);
     padding: 1rem;
     border-radius: .25em;
     display: block;
@@ -163,6 +161,15 @@ main>section:nth-of-type(2)>a:last-child {
     text-align: center;
     width: fit-content;
 }
+
+main>section:nth-of-type(2)>a:last-child:hover {
+    color: var(--color-ah-red);
+    border: solid 2px var(--color-ah-red);
+    background-color: var(--color-card-background);
+}
+
+
+/* Artikelen */
 
 main>ul article h3,
 main>ul article p,
