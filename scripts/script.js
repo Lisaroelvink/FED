@@ -23,9 +23,14 @@ function headerNavOpen() {
 
 headerNavButton.addEventListener('click', headerNavOpen);
 
+// Tekst vergroten
 
+var deButton = document.querySelector("header>nav>button:nth-of-type(2)");
 
-
+function groot() {
+    document.documentElement.classList.toggle("groot");
+}
+deButton.addEventListener("click", groot);
 
 // Main nav dropdown
 
@@ -34,11 +39,19 @@ var mainNavButton = document.querySelector('main>header>nav>button')
 var mainNavList = document.querySelector('main>header>nav>ul')
 
 function onMainNavButtonClick() {
-
-
-
     mainNavList.classList.toggle('open')
 }
 
 
 mainNavButton.addEventListener('click', onMainNavButtonClick)
+
+
+// Dark theme
+
+var maanButton = document.querySelector("body>header>nav>button:nth-of-type(3)");
+
+maanButton.addEventListener("click", dark);
+
+function dark() {
+    document.documentElement.classList.toggle("dark");
+}
