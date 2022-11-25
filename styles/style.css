@@ -275,6 +275,7 @@
         border-radius: 0em 2em 2em 0em;
     }
     /* MAIN NAV */
+    /* Main nav button */
     
     main>header>nav button {
         color: var(--color-text-light);
@@ -308,6 +309,10 @@
         max-height: 0;
         overflow: hidden;
         transition: max-height .2s ease-out;
+    }
+    
+    main>header>nav button.open {
+        color: var(--color-ah-blue);
     }
     /* Main nav list - Open */
     

@@ -23,6 +23,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Je focus:
   Surface plane
+  
  
 </details>
 
@@ -42,11 +43,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/screenshot-home-png" width="375px" alt="Overzicht waar gebruikers recepten kunnen vinden en zoeken">
+  Homepagina  
+  <img src="readme-images/screenshot-home.png" width="375px" alt="Overzicht waar gebruikers recepten kunnen vinden en zoeken">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Detailpagina
   <img src="readme-images/screenshot-recept.png" width="375px" alt="Pagina waar een recept staat met benodigheden, stappenplan en soms een filmpje.">
  
 </details>
@@ -131,18 +132,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/home-breakdown.jpg" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  ### ddetailpagina (bijv menu): 
+  <img src="readme-images/detailpagina-breakdowm.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
-
-
-
 
 
 ## Voortgang 1 (week 2)
@@ -245,7 +241,7 @@ ul
 
   <img src="readme-images/IMG_3669.jpg" width="375px" alt="breakdown header en navigatie">
 
-  <img src="IMG_3670.jpg" width="375px" alt="breakdown section recepten">
+  <img src="readme-images/IMG_3670.jpg" width="375px" alt="breakdown section recepten">
 
   <img src="readme-images/IMG_3671.jpg" width="375px" alt="breakdown laatste section">
 
@@ -304,27 +300,17 @@ ul
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
-
-  #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Lijsten worden voorgelezen. Heb bij de afbeeldingen een aria label toegevoegd. Ook in de header.
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Terug scrollen is vervelend. Heb daarom een overscroll-behaviour x op de html/body gezet.
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Dark thema werkt prima. Alleen als de headerkleur veranderd zijn de iconen niet meer te zien.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Oplossen door header aparte :root var te geven die niet veranderd wanneer dark theme wordt geactiveerd.
 
 </details>
 
@@ -374,23 +360,29 @@ ul
 
 ## Eindgesprek (week 5)
 
-<details>
+<details open>
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/resultaat-home.png" width="375px" alt="uitomst opdracht 1">
 
+  <img src="readme-images/resultaat-home-dark.png" width="375px" alt="uitomst opdracht 1">
+
+  <img src="readme-images/resultaat-detailpagina.png" width="375px" alt="uitomst opdracht 1">
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Positionering was een ramp. Maar alles geleerd over top, translate x/y, margins overal af en bij. 
+
+  <img src="readme-images/menu.png" width="375px" alt="top">
+  <img src="readme-images/volgende-probleem.png" width="375px" alt="top">
+
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+Ik heb te veel tijd in de details gestoken. 
+  <img src="readme-images/details.png" width="375px" alt="bummer">
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
 
@@ -400,12 +392,16 @@ ul
 ## Bronnenlijst
 
 <details open>
-  <summary>continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
-
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. Font face: https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face
+  2. Meerdere weights: https://stackoverflow.com/questions/28279989/multiple-font-weights-one-font-face-query 
+  3. Font weight schaal: https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#:~:text=Note%20that%20when%20using%20relative,%2C%20and%20heavy%20(900) 
+  4. Overscoll: https://stackoverflow.com/questions/30636930/disable-web-page-navigation-on-swipeback-and-forward
+  5. CSS Tricks: a complete guide to flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  6. List styles aanpassen: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type
+  7. Word -break oplossen: 
+  8. Liniar gradient voor de img op de home page : https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient
+       
+    
 
 </details>
