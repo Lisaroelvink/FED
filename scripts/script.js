@@ -39,11 +39,13 @@ var mainNavButton = document.querySelector('main>header>nav>button')
 var mainNavList = document.querySelector('main>header>nav>ul')
 
 function onMainNavButtonClick() {
-    mainNavList.classList.toggle('open')
+    mainNavList.classList.toggle('open');
+    mainNavButton.classList.toggle('open');
 }
 
 
 mainNavButton.addEventListener('click', onMainNavButtonClick)
+
 
 
 // Dark theme

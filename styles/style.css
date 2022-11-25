@@ -144,7 +144,9 @@
     body>footer {
         font-family: var(--font-hamburg)
     }
-    /* MAIN */
+    /*******************************************************/
+    /*********************** MAIN **************************/
+    /*******************************************************/
     
     main {
         font-family: var(--font-greycliff);
@@ -274,7 +276,9 @@
         padding: 1em;
         border-radius: 0em 2em 2em 0em;
     }
-    /* MAIN NAV */
+    /*******************************************************/
+    /*********************** MAIN NAV **********************/
+    /*******************************************************/
     /* Main nav button */
     
     main>header>nav button {
@@ -282,6 +286,18 @@
         background-color: var(--color-background-dark);
         border: none;
         font-family: "Hamburg";
+    }
+    
+    main>header>nav button:hover {
+        color: var(--color-ah-blue);
+    }
+    
+    button.open {
+        color: var(--color-ah-blue);
+    }
+    
+    button.open:hover {
+        color: var(--color-ah-red);
     }
     
     main>header>nav {
@@ -309,10 +325,6 @@
         max-height: 0;
         overflow: hidden;
         transition: max-height .2s ease-out;
-    }
-    
-    main>header>nav button.open {
-        color: var(--color-ah-blue);
     }
     /* Main nav list - Open */
     

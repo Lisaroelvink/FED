@@ -134,8 +134,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### de hele pagina: 
   <img src="readme-images/home-breakdown.jpg" width="375px" alt="breakdown van de hele pagina">
 
-  ### ddetailpagina (bijv menu): 
-  <img src="readme-images/detailpagina-breakdowm.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  ### detailpagina (bijv menu): 
+  <img src="readme-images/detailpagina-breakdown.jpg" width="375px" alt="breakdown van detailpagina">
 
 
 </details>
